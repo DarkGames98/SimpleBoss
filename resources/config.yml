@@ -1,0 +1,43 @@
+health: 50
+size: 1
+damage: 10
+attack_delayed: 2
+spawn_time: 120
+boss-name: "Boss"
+position: 
+  x: 316
+  y: 66
+  z: 207
+  level: world
+alert-message: "Boss will spawn in {time} seconds on 261, 64, 207, world"
+alert-cooldown:
+  - 120
+  - 110
+  - 100
+  - 60
+  - 30
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+boss-spawned: "Boss spawned!, 261, 64, 207, world"
+boss-end: "Boss has been killed by {player} and player got an reward"
+reward:
+  - id: 1
+    meta: 0
+    count: 38
+    name: "killed boss"
+    lore:
+      - "You killed a boss"
+    enchantment:
+      - id: 1
+        level: 4
+      - id: 0
+        level: 4
+  - id: 21
+  - id: 3
+  - id: 85
+commands:
+  - "say {player} killed the boss"
